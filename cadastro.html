@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ONG Impacto Social</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/images/logo.png" alt="Logo da ONG Impacto Social" width="150">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Participe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Participe!</h1>
+        <p>Ficamos felizes com seu interesse. Preencha o formulário abaixo para se cadastrar como voluntário ou doador.</p>
+
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome_completo" required minlength="3">
+                </div>
+                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email_usuario" required>
+                </div>
+
+                <div>
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="data_nascimento" required>
+                </div>
+
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required 
+                           pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" 
+                           placeholder="000.000.000-00" 
+                           title="Digite um CPF válido (ex: 123.456.789-00)">
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required 
+                           pattern="\(\d{2}\)\s?\d{4,5}-?\d{4}"
+                           placeholder="(00) 90000-0000"
+                           title="Digite um telefone válido (ex: (11) 98765-4321)">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required 
+                           pattern="\d{5}-?\d{3}"
+                           placeholder="00000-000"
+                           title="Digite um CEP válido (ex: 12345-678)">
+                </div>
+
+                <div>
+                    <label for="endereco">Endereço (Rua e Nº):</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required>
+                </div>
+            </fieldset>
+            
+            <div>
+                <button typeT="submit">Enviar Cadastro</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ONG Impacto Social. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
